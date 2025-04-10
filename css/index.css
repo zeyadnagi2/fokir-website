@@ -123,8 +123,19 @@ h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.border {
+  border: black 8px solid;
+  border-radius: 2%;
+}
+
 .hello-img img {
   border-radius: 2%;
+}
+
+.hello-img {
+  position: relative;
+  top: 20px;
+  left: 20px;
 }
 
 .hello-content h1 {
