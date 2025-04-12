@@ -58,6 +58,9 @@ h1 {
 
 .navbar .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
 }
 
 .navbar-content {
@@ -295,10 +298,25 @@ button:hover {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.link-portfolio p {
-  display: inline;
-  margin: 3%;
-  color: gray;
+.link-portfolio li a {
+  text-decoration: none;
+  color: rgb(156, 156, 156);
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.link-portfolio a:hover {
+  color: rgb(71, 71, 71);
+}
+
+.link-portfolio ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  list-style: none;
 }
 
 /* Counts */
