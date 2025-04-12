@@ -1,3 +1,15 @@
+.bar-content ul {
+  list-style: none;
+}
+.bar-content li {
+  float: left;
+  padding: 20px;
+}
+.bar-content a {
+  text-decoration: none;
+  color: white;
+}
+
 /* fixed classes */
 body {
   margin: 0px;
@@ -33,23 +45,54 @@ h1 {
   margin: auto;
 }
 
-/* navbar */
-.bar-content {
-  width: 50%;
-  float: left;
+/* nav bar */
+.navbar {
+  background-color: black;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .container {
+  display: flex;
+}
+
+.navbar-content {
   color: #ff305b;
+  width: 50%;
+}
+
+.navbar-links {
+  width: 50%;
+}
+
+.navbar-links ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.bar-content p {
-  display: inline-block;
-  padding: 9.5px;
-  color: #ffffff;
   transition-property: color;
-  transition-duration: 600ms;
+  transition-duration: 1s;
 }
 
-.bar-content p:hover {
+.navbar-links ul li a:hover {
   color: #ff305b;
 }
 
@@ -66,7 +109,6 @@ h1 {
 }
 
 .overlay {
-  width: 100%;
   height: 100%;
   overflow: auto;
   margin: auto;
